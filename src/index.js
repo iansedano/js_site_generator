@@ -1,8 +1,4 @@
 const site = {
-	"theme": {
-		"text-color": "black",
-		"background-color": "white"
-	},
 	"sections": [
 		{
 			"type": "header",
@@ -32,12 +28,7 @@ const site = {
 
 
 function buildSite(site){
-	applyTheme(site.theme)
 	buildSections(site.sections)
-}
-
-function applyTheme(theme){
-	
 }
 
 buildSite(site)

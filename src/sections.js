@@ -11,6 +11,14 @@ function chooseRandomItem(array) {
 	return array[Math.floor(Math.random() * array.length)]
 }
 
+function renderImage(section, container) {
+	if (section.hasOwnProperty("images")) {
+		const image = c("img")
+		image.src = chooseRandomItem(section.images)
+		container.append(image)
+	}
+}
+
 function buildSections(sections){
 	const body = d.getElementById("root")
 	
@@ -24,11 +32,7 @@ function header(section) {
 	const header = c("h1", section.header)
 	container.append(header)
 	
-	if (section.hasOwnProperty("images")) {
-		const image = c("img", null, "header_image")
-		image.src = chooseRandomItem(section.images)
-		container.append(image)
-	}
+	renderImage(section, container)
 
 	return container
 }
@@ -43,12 +47,8 @@ function text(section) {
 
 function gallery(section) {
 	const container = c("section", null, "gallery-container")
-	const images = section.images
-	const src = chooseRandomItem(images)
-	const image = c("img", null, "gallery_image")
-	image.src = src
+	renderImage(section, container)
 	
-	container.append(image)
 	return container
 }
 
@@ -76,12 +76,7 @@ function contact(section) {
 		container.append(form(container.form))
 	}
 	
-	if (section.hasOwnProperty("images")) {
-		const src = chooseRandomItem(section.images)
-		const image = c("img", null, "gallery_image")
-		image.src = src
-		container.append(image)
-	}
+	renderImage(section, container)
 	
 	return container
 }

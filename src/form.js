@@ -12,9 +12,31 @@ function isEmail(string) {
 	} else return false
 }
 
+function submitHandler(e) {
+	e.preventDefault()
+	const inputElements = e.target.querySelectorAll("p")
+	const output = {}
+	inputElements.forEach(element => {
+		
+		const label = element.querySelector("label").innerText
+		const value = element.querySelector("input").value
+		
+		if (label == "E-mail") {
+			if (!isEmail(value)) {
+				alert("Invalid Form Submission")
+				return
+			}
+		}
+		
+		output[label] = value
+		
+	})
+	
+	console.log(output)
+}
+
 function build_form(fields) {
-	console.log(fields)
-	const form_element = c("form")
+	const formElement = c("form")
 	
 	fields.forEach((field) => {
 		if (field.type == "text") {
@@ -30,7 +52,7 @@ function build_form(fields) {
 			label.htmlFor = "input" + field.type + field.label
 			
 			fieldContainer.append(label, br, input)
-			form_element.append(fieldContainer)
+			formElement.append(fieldContainer)
 		} else if (field.type == "email") {
 			const fieldContainer = c("p")
 			
@@ -44,13 +66,18 @@ function build_form(fields) {
 			const label = c("label", field.label)
 			label.htmlFor = "input" + field.type + field.label
 			
-			
 			fieldContainer.append(label, br, input)
-			form_element.append(fieldContainer)
+			formElement.append(fieldContainer)
 		}
-		
-		
 	})
 	
-	return form_element
+	const submitButton = c("input")
+	submitButton.type = "submit"
+	submitButton.value = "Submit"
+	
+	formElement.addEventListener("submit", submitHandler)
+	
+	formElement.append(submitButton)
+	
+	return formElement
 }

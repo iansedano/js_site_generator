@@ -43,7 +43,6 @@ const PAINTING_SITE = {
 			"images": [
 				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_2.jpg",
 				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_3.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_4.jpg",
 				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_5.jpg",
 				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_6.jpg"
 			]

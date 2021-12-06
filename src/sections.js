@@ -10,6 +10,7 @@ function buildSections(sections){
 	const body = d.getElementById("root")
 	
 	sections.forEach((section) => {
+		console.log(section)
 		body.append(SECTION_TYPES[section.type](section))
 	})
 }

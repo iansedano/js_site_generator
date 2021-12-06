@@ -72,7 +72,7 @@ const PAINTING_SITE = {
 				}
 			],
 			"images" : [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/resources/master/resources/01_site_generator/painting_7.jpg"
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_7.jpg"
 			]
 		}
 	]

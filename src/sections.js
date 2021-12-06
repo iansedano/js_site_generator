@@ -55,8 +55,32 @@ function gallery(section) {
 function contact(section) {
 	const container = c("div", null, "contact-container")
 	
+	if (section.hasOwnProperty("header")) {
+		container.append(
+			c("h2", section.header)
+		)
+	}
+	
+	if (section.hasOwnProperty("email")) {
+		const emailLink = c("a", "E-mail me")
+		emailLink.href = "mailto:" + section.email
+		container.append(emailLink)
+	}
+	if (section.hasOwnProperty("phone")) {
+		container.append(
+			c("p", section.phone)
+			)
+	}
+	
 	if (section.hasOwnProperty("form")) {
 		container.append(form(container.form))
+	}
+	
+	if (section.hasOwnProperty("images")) {
+		const src = chooseRandomItem(section.images)
+		const image = c("img", null, "gallery_image")
+		image.src = src
+		container.append(image)
 	}
 	
 	return container

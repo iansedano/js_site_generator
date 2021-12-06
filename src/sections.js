@@ -32,7 +32,15 @@ function text(section) {
 }
 
 function gallery(section) {
-
+	const container = c("div", null, "gallery-container")
+	const images = section.images
+	const src = images[Math.floor(Math.random() * images.length)]
+	const image = c("img", null, "gallery_image")
+	image.src = src
+	
+	container.append(image)
+	return container
+	
 }
 
 function contact(section) {

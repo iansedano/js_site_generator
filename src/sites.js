@@ -31,23 +31,24 @@ const PAINTING_SITE = {
 		{
 			"type": "header",
 			"header": "Bristles Painters for Hire",
-			"background-image": "https://raw.githubusercontent.com/CodingNomads/js_201_labs/resources/master/resources/01_site_generator/painting_1.jpg"
-		},
-		{
-			"type": "gallery",
-			"images": [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/resources/master/resources/01_site_generator/painting_2.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/resources/master/resources/01_site_generator/painting_3.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/resources/master/resources/01_site_generator/painting_4.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/resources/master/resources/01_site_generator/painting_5.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/resources/master/resources/01_site_generator/painting_6.jpg"
-			]
+			"images": ["https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_1.jpg"]
 		},
 		{
 			"type": "text",
 			"header": "Let Us Create Something Beautiful",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
+		{
+			"type": "gallery",
+			"images": [
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_2.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_3.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_4.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_5.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_6.jpg"
+			]
+		},
+		
 		{
 			"type": "contact",
 			"header": "Get in Contact",

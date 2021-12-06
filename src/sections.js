@@ -53,9 +53,19 @@ function gallery(section) {
 }
 
 function contact(section) {
+	const container = c("div", null, "contact-container")
+	
+	if (section.hasOwnProperty("form")) {
+		container.append(form(container.form))
+	}
+	
+	return container
+}
 
+function form(fields) {
+	return ""
 }
 
 function links(section) {
-	
+	return ""
 }

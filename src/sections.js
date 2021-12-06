@@ -20,7 +20,7 @@ function buildSections(sections){
 }
 
 function header(section) {
-	const container = c("div", null, "header-container")
+	const container = c("section", null, "header-container")
 	const header = c("h1", section.header)
 	container.append(header)
 	
@@ -34,7 +34,7 @@ function header(section) {
 }
 
 function text(section) {
-	const container = c("div", null, "text-container")
+	const container = c("section", null, "text-container")
 	const header = c("h2", section.header)
 	const text = c("p", section.text)
 	container.append(header, text)
@@ -42,7 +42,7 @@ function text(section) {
 }
 
 function gallery(section) {
-	const container = c("div", null, "gallery-container")
+	const container = c("section", null, "gallery-container")
 	const images = section.images
 	const src = chooseRandomItem(images)
 	const image = c("img", null, "gallery_image")
@@ -53,7 +53,7 @@ function gallery(section) {
 }
 
 function contact(section) {
-	const container = c("div", null, "contact-container")
+	const container = c("section", null, "contact-container")
 	
 	if (section.hasOwnProperty("header")) {
 		container.append(

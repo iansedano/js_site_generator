@@ -7,30 +7,26 @@ function emailValidator(e) {
 function isEmail(string) {
 	const emailRegex = /.+@.+/
 	
-	if (string.match(emailRegex)) {
-		return true
-	} else return false
+	return Boolean(string.match(emailRegex))
 }
 
 function submitHandler(e) {
 	e.preventDefault()
-	const inputElements = e.target.querySelectorAll("p")
-	const output = {}
-	inputElements.forEach(element => {
-		
-		const label = element.querySelector("label").innerText
-		const value = element.querySelector("input").value
-		
-		if (label == "E-mail") {
-			if (!isEmail(value)) {
-				alert("Invalid Form Submission")
-				return
-			}
-		}
-		
-		output[label] = value
-		
-	})
+	const formData = new FormData(e.target)
+	
+	const entryIterator = formData.entries()
+	output = {}
+	let data = entryIterator.next()
+	while (data.done !== true) {
+		console.log(data)
+		output[data.value[0]] = data.value[1]
+		data = entryIterator.next()
+	}
+	
+	if (!isEmail(output["email"])) {
+		alert('Invalid Form Submission');
+		return;
+	}
 	
 	console.log(output)
 }
@@ -38,37 +34,37 @@ function submitHandler(e) {
 function build_form(fields) {
 	const formElement = c("form")
 	
+	
 	fields.forEach((field) => {
+		const fieldContainer = c("div")
 		if (field.type == "text") {
-			const fieldContainer = c("p")
+			const idString = "input" + field.type + field.label
 			
 			const input = c("input")
 			input.type = "text"
-			input.id = "input" + field.type + field.label
-			
-			const br = c("br")
+			input.id = idString
+			input.name = field.label
 			
 			const label = c("label", field.label)
-			label.htmlFor = "input" + field.type + field.label
+			label.htmlFor = idString
+			fieldContainer.append(label, c("br"), input)
 			
-			fieldContainer.append(label, br, input)
-			formElement.append(fieldContainer)
 		} else if (field.type == "email") {
-			const fieldContainer = c("p")
-			
+			const idString = "input" + field.type + field.label
 			const input = c("input")
 			input.type = "text"
-			input.id = "input" + field.type + field.label
+			input.id = idString
+			input.name = "email"
+			
 			input.addEventListener("input", emailValidator)
 			
-			const br = c("br")
-			
 			const label = c("label", field.label)
-			label.htmlFor = "input" + field.type + field.label
-			
-			fieldContainer.append(label, br, input)
-			formElement.append(fieldContainer)
+			label.htmlFor = idString
+			fieldContainer.append(label, c("br"), input)
 		}
+		
+		
+		formElement.append(fieldContainer)
 	})
 	
 	const submitButton = c("input")

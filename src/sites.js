@@ -4,9 +4,9 @@ const COOKING_SITE = {
 			"type": "header",
 			"header": "Cooking with Matt",
 			"images": [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/p1_cooking_1.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/p1_cooking_2.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/p1_cooking_3.jpg"
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/p1_cooking_1.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/p1_cooking_2.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/p1_cooking_3.jpg"
 			]
 		},
 		{
@@ -17,10 +17,10 @@ const COOKING_SITE = {
 		{
 			"type": "gallery",
 			"images": [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/p1_cooking_4.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/p1_cooking_5.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/p1_cooking_6.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/p1_cooking_7.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/p1_cooking_4.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/p1_cooking_5.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/p1_cooking_6.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/p1_cooking_7.jpg",
 			]
 		}
 	]
@@ -31,7 +31,7 @@ const PAINTING_SITE = {
 		{
 			"type": "header",
 			"header": "Bristles Painters for Hire",
-			"images": ["https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_1.jpg"]
+			"images": ["https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/painting_1.jpg"]
 		},
 		{
 			"type": "text",
@@ -41,10 +41,10 @@ const PAINTING_SITE = {
 		{
 			"type": "gallery",
 			"images": [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_2.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_3.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_5.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_6.jpg"
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/painting_2.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/painting_3.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/painting_5.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/painting_6.jpg"
 			]
 		},
 		
@@ -71,7 +71,7 @@ const PAINTING_SITE = {
 				}
 			],
 			"images" : [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/painting_7.jpg"
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/painting_7.jpg"
 			]
 		}
 	]
@@ -87,9 +87,9 @@ const PORTFOLIO_SITE = {
 		{
 			"type": "gallery",
 			"images": [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/coding_2.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/coding_3.jpg",
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/coding_4.jpg"
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/coding_2.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/coding_3.jpg",
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/coding_4.jpg"
 			]
 		},
 		{
@@ -113,7 +113,7 @@ const PORTFOLIO_SITE = {
 				}
 			],
 			"images" : [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/coding_5.jpg"
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/coding_5.jpg"
 			]
 		},
 		{
@@ -139,7 +139,7 @@ const PORTFOLIO_SITE = {
 				}
 			],
 			"images" : [
-				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/01_site_generator/coding_5.jpg"
+				"https://raw.githubusercontent.com/CodingNomads/js_201_labs/master/resources/site_generator/coding_5.jpg"
 			]
 		}
 	]
